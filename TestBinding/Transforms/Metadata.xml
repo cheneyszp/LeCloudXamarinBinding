@@ -1,0 +1,60 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='com.letv.ads.constant']/interface[@name='AdInfoConstant.AdBitRate']/field[@name='_1080P']" name="managedName">_1080p</attr>
+  <attr path="/api/package[@name='com.letv.ads.constant']/interface[@name='AdInfoConstant.AdBitRate']/field[@name='_2K']" name="managedName">_2k</attr>
+  <attr path="/api/package[@name='com.letv.ads.constant']/interface[@name='AdInfoConstant.AdBitRate']/field[@name='_4K']" name="managedName">_4k</attr>
+
+  <!--CS0102	类型“AdGoods”已经包含“GoodsType”的定义-->
+  <attr path="/api/package[@name='com.letv.ads.bean']/class[@name='AdGoods']/field[@name='goodsType']" name="managedName">fgoodsType</attr>
+  <attr path="/api/package[@name='com.letv.ads.bean']/class[@name='AdGoods']/field[@name='jumpType']" name="managedName">fjumpType</attr>
+  <attr path="/api/package[@name='com.letv.ads.bean']/class[@name='AdGoods']/field[@name='showType']" name="managedName">fshowType</attr>
+
+  <attr path="/api/package[@name='com.lecloud.xutils.http.client.entity']/class[@name='DecompressingEntity']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.lecloud.xutils.http.client.entity']/class[@name='DecompressingEntity']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.lecloud.sdk.listener']/interface[@name='EventArgs']" name="visibility">private</attr>
+
+
+  <remove-node path="/api/package[@name='com.letv.pano.vrlib.strategy.interactive']
+               /class[@name='AbsInteractiveStrategy']" />
+  
+  <remove-node path="/api/package[@name='com.lecloud.xutils.db.converter']/class[@name='ByteArrayColumnConverter']" />
+  
+  
+
+  <attr path="/api/package[@name='com.lecloud.sdk.api.ad.impl']
+        /class[@name='Ad']
+        /constructor[@name='Ad' and count(parameter)=1 and parameter[1][@type='com.lecloud.sdk.api.ad.IAdContext']]
+        /parameter[1]"
+    name="managedType">Com.Lecloud.Sdk.Api.AD.AdContext</attr>
+
+
+  <attr path="/api/package[@name='com.lecloud.xutils.http']
+        /class[@name='HttpHandler']
+        /method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.letv.pano.vrlib.strategy.projection']
+        /class[@name='ProjectionModeManager']
+        /method[@name='createStrategy' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.letv.pano.vrlib.strategy.interactive']
+        /class[@name='InteractiveModeManager']
+        /method[@name='createStrategy' and count(parameter)=1 and parameter[1][@type='int']]"
+        name="managedReturn">Java.Lang.Object</attr>
+  
+  <attr path="/api/package[@name='com.letv.pano.vrlib.strategy.display']
+        /class[@name='DisplayModeManager']
+        /method[@name='createStrategy' and count(parameter)=1 and parameter[1][@type='int']]"
+        name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.lecloud.sdk.listener']/interface[@name='EventArgs']"
+        name="managedName">JEventArgs</attr>
+
+  
+</metadata>
